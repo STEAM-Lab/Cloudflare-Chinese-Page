@@ -1,4 +1,4 @@
-# Cloudflare-Chinese-Page-
+# Cloudflare-Chinese-Page
 
 我的自定义 `Cloudflare` 的 5 秒盾页面，是依据 `Cloudflare` 官方的界面进行改版的（已翻译为中文）。 
 
@@ -16,3 +16,5 @@
 + WAF拦截：<https://devhjz.eu.org/cf/WAF.html>
 + 5秒盾：<https://devhjz.eu.org/cf/5s.html>
 + 质询：<https://devhjz.eu.org/cf/captcha.html>
+
+captchame.html为旧版，现已停止使用。
