@@ -17,4 +17,4 @@
 + 5秒盾：<https://devhjz.eu.org/cf/5s.html>
 + 质询：<https://devhjz.eu.org/cf/captcha.html>
 
-captchame.html为旧版，现已停止使用。
+captchamy.html为旧版，现已停止使用。
