@@ -8,9 +8,9 @@
 
 已改为中文，HTML语言编写，可以自己编辑其中的文字。 避免了部分访问者因看不懂英文直接关闭。
 
-网站 <https://devhjz.eu.org> 
+网站 <https://Hjz.ac.cn/> 
 
-演示地址：（已开启5秒盾）
+演示地址：
 
 + IP拦截：<https://devhjz.eu.org/cf/IP.html>
 + WAF拦截：<https://devhjz.eu.org/cf/WAF.html>
