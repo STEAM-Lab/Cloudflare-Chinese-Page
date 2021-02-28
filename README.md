@@ -13,4 +13,4 @@
 统一演示地址：
 https://chinese.pages.dev/
 
-注：captchamy.html为旧版，现已停止使用。
+注：5sold.html为5秒盾旧版，现Cloudflare已提供新版，并已同步翻译更新。请使用新版5s.html。
