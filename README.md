@@ -8,7 +8,7 @@
 
 已改为中文，HTML语言编写，可以自己编辑其中的文字。 避免了部分访问者因看不懂英文直接关闭。
 
-网站 <https://Hjz.ac.cn/> 
+网站 <https://DevHjz.com/> 
 
 统一演示地址：
 https://chinese.pages.dev/
