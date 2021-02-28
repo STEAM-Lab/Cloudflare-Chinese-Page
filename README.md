@@ -11,6 +11,6 @@
 网站 <https://DevHjz.com/> 
 
 统一演示地址：
-https://chinese.pages.dev/
+https://Chinese.Pages.Dev/
 
-注：5sold.html为5秒盾旧版，现Cloudflare已提供新版，并已同步翻译更新。请使用新版5s.html。
+注：5sold.html为5秒盾旧版，现Cloudflare已提供新版，并已同步更新翻译。请使用新版5s.html。
