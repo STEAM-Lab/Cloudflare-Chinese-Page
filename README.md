@@ -14,6 +14,8 @@ https://Chinese.Pages.Dev/
 ⚠注意：
 1.🛑部署到自己的网站使用前务必跟换网站名及邮箱❗❗❗ 
 
+
 2.5sold.html为5秒盾旧版，现Cloudflare已提供新版，并已同步更新翻译。
+
   ✅欢迎使用新版5秒盾界面，文件名：5s.html
 
