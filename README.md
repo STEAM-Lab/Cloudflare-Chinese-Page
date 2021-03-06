@@ -13,4 +13,5 @@
 统一演示地址：
 https://Chinese.Pages.Dev/
 
-注：5sold.html为5秒盾旧版，现Cloudflare已提供新版，并已同步更新翻译。新版故障………………
+⚠⚠⚠注：5sold.html为5秒盾旧版，现Cloudflare已提供新版，并已同步更新翻译。
+✅欢迎使用新版5秒盾，文件名：5s.html
