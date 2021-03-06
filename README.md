@@ -1,16 +1,19 @@
 # Cloudflare-Chinese-Page
 
-我的自定义 `Cloudflare` 的 5 秒盾页面，是依据 `Cloudflare` 官方的界面进行改版的（已翻译为中文）。 
+自定义Cloudflare为中文页面，依据Cloudflare官方的界面源码进行翻译。
 
-如要使用自定义页面功能，你需要开通 `Cloudflare Pro` 订阅或 Plesk Plus with WAF！ 
+HTML语言编写，使用者可以轻松编辑源码中的文字。
 
-已改为中文，HTML语言编写，可以自己编辑其中的文字。 避免了部分访问者因看不懂英文直接关闭。
+如果网站是面向国内用户的，自定义页面可以很好的避免了部分访问者因不了解英文说明而直接关闭网页。 
 
 网站 <https://DevHjz.com/> 
 
 统一演示地址：
 https://Chinese.Pages.Dev/
 
-⚠注：5sold.html为5秒盾旧版，现Cloudflare已提供新版，并已同步更新翻译。
+⚠注意：
+1.🛑部署到自己的网站使用前务必跟换网站名及邮箱❗❗❗ 
 
-✅欢迎使用新版5秒盾界面，文件名：5s.html
+2.5sold.html为5秒盾旧版，现Cloudflare已提供新版，并已同步更新翻译。
+  ✅欢迎使用新版5秒盾界面，文件名：5s.html
+
