@@ -19,4 +19,5 @@ https://Chinese.Pages.Dev/
 3.5sold.html为5秒盾旧版，现Cloudflare已提供新版，并已同步更新翻译。
 
   ✅欢迎使用新版5秒盾界面，文件名：5s.html
-
+  
+4.下方“由Cloudflare提供防护”的字样可以直接在自定义界面中删除或更改。
