@@ -34,7 +34,7 @@
               
               <span class="cf-error-type" data-translate="error">ErrorMessage</span>
               <span class="cf-error-code">${ErrorNumber}</span>
-              <small class="heading-ray-id">Ray ID: ::CLIENT_IP:: </small>
+              <small class="heading-ray-id">Ray ID: ::RAY_ID:: </small>
             </h1>
             <h2 class="cf-subheadline" data-translate="error_desc">Connection timed out</h2>
         </div><!-- /.error-overview -->
@@ -101,7 +101,7 @@
   <p>
     <span class="cf-footer-item">Cloudflare Ray ID: <strong>::RAY_ID::</strong></span>
     <span class="cf-footer-separator">&bull;</span>
-    <span class="cf-footer-item"><span data-translate="your_ip">Your IP: </span>::CLIENT_IP::</span>
+    <span class="cf-footer-item"><span data-translate="your_ip">你的 IP: </span>::CLIENT_IP::</span>
     <span class="cf-footer-separator">&bull;</span>
     <span class="cf-footer-item"><span data-translate="performance_security_by"></span> <a data-orig-proto="https" data-orig-ref="www.cloudflare.com/5xx-error-landing?utm_source=error_footer" id="brand_link" target="_blank">性能和安全性由 Cloudflare 提供 </a></span>
     
@@ -111,7 +111,9 @@
 
     </div><!-- /#cf-error-details -->
 </div><!-- /#cf-wrapper -->
-<none>::CLOUDFLARE_ERROR_500S_BOX::</none>
+<div style="display:none;">
+  ::CLOUDFLARE_ERROR_500S_BOX::
+  </div>
 <script>
   (function () {
     const baseDetils = document.querySelector(".cf-error-details");
