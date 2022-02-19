@@ -1,0 +1,167 @@
+<!doctype html>
+<!--黄健周的创客空间专用页面-->
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>安全检查！-黄健周的创客空间</title>
+<script crossorigin="anonymous" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" src="https://lib.baomitu.com/jquery/3.3.1/jquery.min.js"></script>
+//<SCRIPT type="text/javascript">        
+ //           var maxtime = 6; 
+//function CountDown() {
+//if (maxtime >= 0) {
+//minutes = Math.floor(maxtime / 60);
+//seconds = Math.floor(maxtime % 60);
+//msg = "稍候 " + seconds + " 秒";
+                    
+  //                  if (maxtime == 0){msg = "即将进入！";}
+//document.all["timer"].innerHTML = msg;
+//--maxtime;
+//} else{
+//clearInterval(timer);
+//                }
+//}
+//timer = setInterval("CountDown()", 1000);                
+</SCRIPT>
+<SCRIPT>
+//显示ip节点
+$(function() {
+        $.get("/cdn-cgi/trace",
+        function(data) {
+                var sip = data.match(/(ip=?)(\S*)/)[2];
+                var str = data.match(/(colo=?)(\S*)/)[2];
+                var every = [['HKG', 'CloudFlare香港'], ['MFM', 'CloudFlare澳门'], ['BKK', 'CloudFlare曼谷'], ['TPE', 'CloudFlare台北'], ['NRT', 'CloudFlare东京'], ['KIX', 'CloudFlare大阪'], ['ICN', 'CloudFlare仁川'], ['LHR', 'CloudFlare伦敦'], ['SIN', 'CloudFlare新加坡'], ['CDG', 'CloudFlare巴黎'], ['FRA', 'CloudFlare法兰克福'], ['KUL', 'CloudFlare马来西亚'], ['LAX', 'CloudFlare洛杉矶'], ['SJC', 'CloudFlare圣何塞'], ['KBP', 'CloudFlare乌克兰'], ['PRG', 'CloudFlare布拉格']];
+                for (var i = 0; i < every.length; i++) {
+                        if (str == every[i][0]) {
+                                $("#result").append("当前CDN节点:[" + str + "]" + every[i][1] + ",本地IP:" + sip);
+                        }
+                }
+                
+        });
+})
+//控制台
+console.clear();
+console.log('%c访问即代表遵守本站Cookies! ','background:#fff;color:#333;text-shadow:0 0 2px #eee,0 0 3px #eee,0 0 3px #eee,0 0 2px #eee,0 0 3px #eee;');
+console.log('%c如有不适,请您直接关闭本页面. ','background:#fff;color:#333;text-shadow:0 0 2px #eee,0 0 3px #eee,0 0 3px #eee,0 0 2px #eee,0 0 3px #eee;');
+ console.log('%c页面加载完毕消耗了'+Math.round(performance.now()*100)/100+'ms','background:#fff;color:#333;text-shadow:0 0 2px #eee,0 0 3px #eee,0 0 3px #eee,0 0 2px #eee,0 0 3px #eee;');
+console.log("%c「Maybe you are my God」", "background:black; color:white; font-size:25px");
+console.log("%c ", "background: url(https://ws4.sinaimg.cn/large/0076VEu5ly1g0889n445fj30dw08i74u.jpg) no-repeat center;padding-left:500px;padding-bottom: 364px;");
+</SCRIPT>
+<style>
+
+html {
+  height: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+html body {
+  background: #333333;
+  background-size: 163px;
+  font: 14px/21px Monaco, sans-serif;
+  color: #999;
+  font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+  height: 100%;
+  min-height: 100%;
+}
+html body a, html body a:visited {
+  text-decoration: none;
+  color: #FF805F;
+}
+html body h4 {
+  margin: 0;
+  color: #666;
+}
+
+.scene {
+  width: 100%;
+  height: 100%;
+  -webkit-perspective: 600;
+          perspective: 600;
+  align-items: normal;
+  align-items: center;
+  justify-content: center;
+}
+.scene svg {
+  width: 300px;
+  height: 300px;
+}
+
+.dc-logo {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+
+.dc-logo:hover svg {
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-animation: arrow-spin 2.5s 0s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+          animation: arrow-spin 2.5s 0s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+}
+.dc-logo:hover:hover:before {
+  content: '\2764';
+  padding: 6px;
+  font: 10px/1 Monaco, sans-serif;
+  font-size: 10px;
+  color: #00fffe;
+  text-transform: uppercase;
+  position: absolute;
+  left: -70px;
+  top: -30px;
+  white-space: nowrap;
+  z-index: 20px;
+  box-shadow: 0px 0px 4px #222;
+  background: rgba(0, 0, 0, 0.4);
+}
+.dc-logo:hover:hover:after {
+  content: 'Digital Craft';
+  padding: 6px;
+  font: 10px/1 Monaco, sans-serif;
+  font-size: 10px;
+  color: #6E6F71;
+  text-transform: uppercase;
+  position: absolute;
+  right: 0;
+  top: -30px;
+  white-space: nowrap;
+  z-index: 20px;
+  box-shadow: 0px 0px 4px #222;
+  background: rgba(0, 0, 0, 0.4);
+  background-image: none;
+}
+
+@-webkit-keyframes arrow-spin {
+  50% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@keyframes arrow-spin {
+  50% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+</style>
+</head>
+<body style="text-align: center;">
+<br>
+<a><img style="width: 200px;" src="https://ae01.alicdn.com/kf/U1aa2ca0e858e4d368deb7435d2be2837e.jpg" /></a>
+<h3 style="color: #58b1f7;"><div data-translate="checking_browser" id="timer">检测到当前访问环境存在异常，需要您输入验证码,验证您非机器人，谢谢合作！</div> </h3>
+<div class="attribution" style="margin:0 auto;padding-top:6rem;" align="center">
+
+::CAPTCHA_BOX::	
+
+</div>	
+<p style="color: #84c1bc;" data-translate="process_is_automatic">事件编号：::RAY_ID::<br>您的IP：::CLIENT_IP:: ::GEO::</p>
+<h3 style="color: #8690c7;" style="color: #adadad;" ><small id="result"></small></h3>
+<a><img style="width: 200px;" src="https://yanxuan.nosdn.127.net/87db69025bc4c7c50a772ce1213c2121.gif" /></a>
+</div>
+
+</body>
+</html>

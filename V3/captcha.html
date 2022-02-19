@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="zh-CN"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="zh-CN"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="zh-CN"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN"> <!--<![endif]-->
+<head>
+<title>安全检查！</title>
+
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/cf.errors.css" type="text/css" media="screen,projection" />
+<!--[if lt IE 9]><link rel="stylesheet" id='cf_styles-ie-css' href="/cdn-cgi/styles/cf.errors.ie.css" type="text/css" media="screen,projection" /><![endif]-->
+<style type="text/css">body{margin:0;padding:0}</style>
+<!--[if lte IE 9]><script type="text/javascript" src="/cdn-cgi/scripts/jquery.min.js"></script><![endif]-->
+<!--[if gte IE 10]><!--><script type="text/javascript" src="/cdn-cgi/scripts/zepto.min.js"></script><!--<![endif]-->
+<script type="text/javascript" src="/cdn-cgi/scripts/cf.common.js"></script>
+
+
+</head>
+<body>
+  <div id="cf-wrapper">
+    <div class="cf-alert cf-alert-error cf-cookie-error" id="cookie-alert" data-translate="enable_cookies">请启用 cookies.</div>
+    <div id="cf-error-details" class="cf-error-details-wrapper">
+      <div class="cf-wrapper cf-header cf-error-overview">
+        <h1 data-translate="challenge_headline">还有一步</h1>
+        <h2 class="cf-subheadline"><span data-translate="complete_sec_check">请完成安全检查才能访问</span>  黄健周的创客空间</h2>
+      </div><!-- /.header -->
+      
+      <div class="cf-section cf-highlight cf-captcha-container">
+        <div class="cf-wrapper">
+          <div class="cf-columns two">
+            <div class="cf-column">
+            
+              <div class="cf-highlight-inverse cf-form-stacked">
+                <form class="challenge-form" id="challenge-form" action="" method="post" enctype="application/x-www-form-urlencoded">
+::CAPTCHA_BOX::
+  </noscript>
+</form>
+
+              </div>
+            </div>
+
+            <div class="cf-column">
+              <div class="cf-screenshot-container">
+              
+                <span class="cf-no-screenshot"></span>
+              
+              </div>
+            </div>
+          </div><!-- /.columns -->
+        </div>
+      </div><!-- /.captcha-container -->
+
+      <div class="cf-section cf-wrapper">
+        <div class="cf-columns two">
+          <div class="cf-column">
+            <h2 data-translate="why_captcha_headline">为什么我必须完成人机验证？</h2>
+            
+            <p data-translate="why_captcha_detail">完成人机验证证明您是人类，并且可以使您临时访问网络媒体资源。</p>
+          </div>
+
+          <div class="cf-column">
+            <h2 data-translate="resolve_captcha_headline">将来我该怎么办？</h2>
+            
+
+            <p data-translate="resolve_captcha_antivirus">如果您处于个人连接状态（例如在家），则可以在设备上运行防病毒扫描，以确保该设备未感染恶意软件。</p>
+
+            <p data-translate="resolve_captcha_network">如果您在办公室或共享网络中，则可以要求网络管理员在网络上运行扫描，以查找配置错误或受感染的设备。</p>
+          </div>
+        </div>
+      </div><!-- /.section -->
+      
+
+      <div class="cf-error-footer cf-wrapper">
+  <p>
+    <span class="cf-footer-item">Cloudflare Ray ID: <strong>::RAY_ID::</strong></span>
+    <span class="cf-footer-separator">&bull;</span>
+    <span class="cf-footer-item"><span data-translate="your_ip">Your IP: </span>::CLIENT_IP:: ::GEO::</span>
+    <span class="cf-footer-separator">&bull;</span>
+    <span class="cf-footer-item"><span data-translate="performance_security_by">性能和安全由</span> <a data-orig-proto="https" data-orig-ref="www.cloudflare.com/5xx-error-landing?utm_source=error_footer" id="brand_link" target="_blank">Cloudflare</a></span>提供
+    
+<SCRIPT>
+//显示ip节点
+$(function() {
+        $.get("/cdn-cgi/trace",
+        function(data) {
+                var sip = data.match(/(ip=?)(\S*)/)[2];
+                var str = data.match(/(colo=?)(\S*)/)[2];
+                var every = [['HKG', 'CloudFlare香港'], ['MFM', 'CloudFlare澳门'], ['BKK', 'CloudFlare曼谷'], ['TPE', 'CloudFlare台北'], ['NRT', 'CloudFlare东京'], ['KIX', 'CloudFlare大阪'], ['ICN', 'CloudFlare仁川'], ['LHR', 'CloudFlare伦敦'], ['SIN', 'CloudFlare新加坡'], ['CDG', 'CloudFlare巴黎'], ['FRA', 'CloudFlare法兰克福'], ['KUL', 'CloudFlare马来西亚'], ['LAX', 'CloudFlare洛杉矶'], ['SJC', 'CloudFlare圣何塞'], ['KBP', 'CloudFlare乌克兰'], ['PRG', 'CloudFlare布拉格']];
+                for (var i = 0; i < every.length; i++) {
+                        if (str == every[i][0]) {
+                                $("#result").append("当前CDN节点:[" + str + "]" + every[i][1] );
+                        }
+                }
+                
+        });
+})
+</SCRIPT>
+    
+  </p>
+</div><!-- /.error-footer -->
+
+
+    </div><!-- /#cf-error-details -->
+  </div><!-- /#cf-wrapper -->
+
+  <script type="text/javascript">
+  window._cf_translation = {};
+  window._cf_translation.locale = 'en';
+  window._cf_translation.blobs = {};
+</script>
+
+</body>
+</html>
