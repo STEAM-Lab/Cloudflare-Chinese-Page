@@ -27,3 +27,5 @@ https://Chinese.Pages.Dev/
 请正在使用V2的用户及时更新到V3以解决问题。
 
 如果JS/CSS访问慢，可以手动将代码中的https://cloudflare.com/cdn-cgi/ 更换为你自己的域名/cdn-cgi/或只保留/cdn-cgi/，但要注意如只保留/cdn-cgi/，删除设置的域名在自定义界面设置时需先托管于你自己经过Cloudflare缓存的对应域名的服务器上，然后从自己的链接添加。
+
+感谢@186526大佬提供的优化思路！ https://github.com/186526/CloudflareCustomErrorPage
