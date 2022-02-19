@@ -24,39 +24,7 @@
 
 </head>
 <body>
-  <div style="display:none;">
-    ::CLOUDFLARE_ERROR_500S_BOX::
-    </div>
-  <script>
-    (function () {
-      const baseDetils = document.querySelector(".cf-error-details");
-      const ErrorMessage = baseDetils.querySelector("h1").innerText;
-      const Explain = baseDetils.querySelector("p").innerText;
-      let ErrorNumber = "5XX";
-      let POP = "POP";
-      baseDetils.querySelector("ul").childNodes.forEach((e) => {
-        if (e.innerText !== undefined) {
-          let check = e.innerText.replace("Error reference number: ", "");
-          if (check !== e.innerText) {
-            ErrorNumber = check;
-            return;
-          }
-          check = e.innerText.replace("Cloudflare Location: ", "");
-          if (check !== e.innerText) {
-            POP = check;
-            return;
-          }
-        }
-      });
-      document.querySelector("header main").innerText = ErrorNumber;
-      document.querySelector("header description").innerText = ErrorMessage;
-      document.querySelector("explain p").innerText = Explain;
-      document.querySelector("text #pop").innerText = POP;
-      document.querySelector(
-        "title"
-      ).innerText = `${ErrorNumber} | ${ErrorMessage}`;
-    })();
-  </script>
+
 <div id="cf-wrapper">
 
     
@@ -65,11 +33,11 @@
         <div class="cf-wrapper cf-error-overview">
             <h1>
               
-              <span class="cf-error-type" data-translate="error">ErrorMessage</span>
-              <span class="cf-error-code">${ErrorNumber}</span>
+              <span class="cf-error-type" data-translate="error">错误：</span>
+              <span class="cf-error-code" id="NUM"> 5XX </span>
               <small class="heading-ray-id">Ray ID: ::RAY_ID:: </small>
             </h1>
-            <h2 class="cf-subheadline" data-translate="error_desc">Connection timed out</h2>
+            <h2 class="cf-subheadline" data-translate="error_desc" id="MSG">ERROR</h2>
         </div><!-- /.error-overview -->
         
         <div class="cf-section cf-highlight cf-status-display">
@@ -91,7 +59,7 @@
     <i class="cf-icon cf-icon-cloud"></i>
     <i class="cf-icon-status cf-icon-ok"></i>
   </div>
-  <span class="cf-status-desc" data-translate="cloud_desc">POP</span>
+  <span class="cf-status-desc" data-translate="cloud_desc" id="pop">undefined</span>
   <h3 class="cf-status-name" data-translate="cloud_label">Cloudflare</h3>
   <span class="cf-status-label" data-translate="cloud_status_label">正常工作</span>
 </div>
@@ -115,7 +83,7 @@
             <div class="cf-columns two">
                 <div class="cf-column">
                     <h2 data-translate="what_happened">发生了什么？</h2>
-                    <p data-translate="connection_timed_out">Cloudflare的网络与原始Web服务器之间的初始连接异常。 因此，该网页无法显示。</p>
+                    <p data-translate="connection_timed_out" id="explain">Cloudflare的网络与原始Web服务器之间的连接异常。 因此，该网页无法显示。</p>
                 </div>
               
                 <div class="cf-column">
@@ -144,4 +112,39 @@
 
     </div><!-- /#cf-error-details -->
 </div><!-- /#cf-wrapper -->
+  
+</body>>
+<div style="display:none;">
+  ::CLOUDFLARE_ERROR_500S_BOX::
+  </div>
+<script>
+  (function () {
+    const baseDetils = document.querySelector(".cf-error-details");
+    const ErrorMessage = baseDetils.querySelector("h1").innerText;
+    const Explain = baseDetils.querySelector("p").innerText;
+    let ErrorNumber = "5XX";
+    let POP = "POP";
+    baseDetils.querySelector("ul").childNodes.forEach((e) => {
+      if (e.innerText !== undefined) {
+        let check = e.innerText.replace("Error reference number: ", "");
+        if (check !== e.innerText) {
+          ErrorNumber = check;
+          return;
+        }
+        check = e.innerText.replace("Cloudflare Location: ", "");
+        if (check !== e.innerText) {
+          POP = check;
+          return;
+        }
+      }
+    });
+    document.querySelector("#NUM").innerText = ErrorNumber;
+    document.querySelector("#MSG").innerText = ErrorMessage;
+    document.querySelector("#explain").innerText = Explain;
+    document.querySelector("#pop").innerText = POP;
+    document.querySelector(
+      "title"
+    ).innerText = `${ErrorNumber} | ${ErrorMessage}`;
+  })();
+</script>
 </html>
