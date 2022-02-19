@@ -24,6 +24,39 @@
 
 </head>
 <body>
+  <div style="display:none;">
+    ::CLOUDFLARE_ERROR_500S_BOX::
+    </div>
+  <script>
+    (function () {
+      const baseDetils = document.querySelector(".cf-error-details");
+      const ErrorMessage = baseDetils.querySelector("h1").innerText;
+      const Explain = baseDetils.querySelector("p").innerText;
+      let ErrorNumber = "5XX";
+      let POP = "POP";
+      baseDetils.querySelector("ul").childNodes.forEach((e) => {
+        if (e.innerText !== undefined) {
+          let check = e.innerText.replace("Error reference number: ", "");
+          if (check !== e.innerText) {
+            ErrorNumber = check;
+            return;
+          }
+          check = e.innerText.replace("Cloudflare Location: ", "");
+          if (check !== e.innerText) {
+            POP = check;
+            return;
+          }
+        }
+      });
+      document.querySelector("header main").innerText = ErrorNumber;
+      document.querySelector("header description").innerText = ErrorMessage;
+      document.querySelector("explain p").innerText = Explain;
+      document.querySelector("text #pop").innerText = POP;
+      document.querySelector(
+        "title"
+      ).innerText = `${ErrorNumber} | ${ErrorMessage}`;
+    })();
+  </script>
 <div id="cf-wrapper">
 
     
@@ -111,37 +144,4 @@
 
     </div><!-- /#cf-error-details -->
 </div><!-- /#cf-wrapper -->
-<div style="display:none;">
-  ::CLOUDFLARE_ERROR_500S_BOX::
-  </div>
-<script>
-  (function () {
-    const baseDetils = document.querySelector(".cf-error-details");
-    const ErrorMessage = baseDetils.querySelector("h1").innerText;
-    const Explain = baseDetils.querySelector("p").innerText;
-    let ErrorNumber = "5XX";
-    let POP = "POP";
-    baseDetils.querySelector("ul").childNodes.forEach((e) => {
-      if (e.innerText !== undefined) {
-        let check = e.innerText.replace("Error reference number: ", "");
-        if (check !== e.innerText) {
-          ErrorNumber = check;
-          return;
-        }
-        check = e.innerText.replace("Cloudflare Location: ", "");
-        if (check !== e.innerText) {
-          POP = check;
-          return;
-        }
-      }
-    });
-    document.querySelector("header main").innerText = ErrorNumber;
-    document.querySelector("header description").innerText = ErrorMessage;
-    document.querySelector("explain p").innerText = Explain;
-    document.querySelector("text #pop").innerText = POP;
-    document.querySelector(
-      "title"
-    ).innerText = `${ErrorNumber} | ${ErrorMessage}`;
-  })();
-</script>
 </html>
