@@ -57,22 +57,11 @@
     <p data-translate="allow_5_secs" id="cf-spinner-allow-5-secs" >请等待最多 5 秒钟。</p>
     <p data-translate="redirecting" id="cf-spinner-redirecting" style="display:none;color:#e4af00">重定向中……</p>
   </div>
-<div style="display:none;">
-  ::IM_UNDER_ATTACK_BOX::
-  </div>
+<div style="display:none;">::IM_UNDER_ATTACK_BOX::</div>
     <script type="text/javascript">
       (function(){
-        var a = document.getElementById('cf-content');
+          var a = document.getElementById('cf-content');
           a.style.display = 'block';
-          var isIE = /(MSIE|Trident\/|Edge\/)/i.test(window.navigator.userAgent);
-          var trkjs = isIE ? new Image() : document.createElement('img');
-          trkjs.id = "trk_jschal_js";
-          trkjs.setAttribute("alt", "");
-          //document.body.appendChild(trkjs);
-          var cpo=document.createElement('script');
-          cpo.type='text/javascript';
-          cpo.src="https://cloudflare.com/cdn-cgi/challenge-platform/h/g/orchestrate/jsch/v1";
-          document.getElementsByTagName('head')[0].appendChild(cpo);
         }());
     </script>
 
